@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Pratica 1</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <select name="nome" id="aluno">
+        <optgroup>
+            <option value="aluno1">Rafael</option>
+            <option value="aluno2">Maria</option>
+            <option value="aluno3">João</option>
+            <option value="aluno4">Gabriel</option>
+            <option value="aluno5">Miguel</option>
+        </optgroup>
+    </select>
+    <br />
+    <br />
+    <br />
+    <table border="1">    
+        <tr>
+            <th width="100px" height="75px" rowspan="2" bgcolor="gray">Aluno</th> 
+            <th colspan="3" bgcolor="gray">Semestre 1</th> 
+            <th colspan="3" bgcolor="gray">Semestre 2</th> 
+            <th colspan="3" bgcolor="gray">Semestre 3</th>    
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>10</td>
+            <td>8</td>
+            <td>9</td>
+            <td>6</td>
+            <td>8,7</td>
+            <td>10</td>
+            <td>6</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>      
+    </table>
+    <h2>Faça seu cadastramento</h1>
+        <h5>Nome: <input type="text" name="nome" size="30" maxlength="100" /></h5>
+        <h5>Sobrenome: <input type="text" name="sobrenome" size="35" maxlength="100" /></h5>
+        <h5>Email: <input type="text" name="email" size="35" maxlength="100" /></h5>
+        <h5>Data de Nascimento: <input type="date" name="data" size="35" min="1920-01-01" max="2024-01-01"/></h5>
+        <h5>Sexo: <input type="radio" name="sexo" size="35" maxlength="100" />Masculino
+                  <input type="radio" name="sexo" size="35" maxlength="100" />Feminino</h5>
+        <h5>Endereço: <input type="text" name="endereco" size="75" maxlength="200" /></h5>
+        <h5>CEP: <input type="text" name="cep" size="15" maxlength="10" /></h5>
+        <h5>Cor favorita: <input type="color" name="cor"/></h5>
+        <h5>Estado(UF): <input type="select" name="uf" size="5" /></h5>
+        <input type="submit" name="enviar"/>
+</body>
+</html>
