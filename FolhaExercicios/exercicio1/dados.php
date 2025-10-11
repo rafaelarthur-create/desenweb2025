@@ -11,11 +11,9 @@
             
         require_once 'funcoes.php';
 
-        echo $_POST['valor1'];
-        echo "<br>";
-        echo $_POST['valor2'];
-        echo "<br>";
-        echo $_POST['valor3'];
+        echo $_POST['valor1'] . "<br>";
+        echo $_POST['valor2'] . "<br>";
+        echo $_POST['valor3'] . "<br>";
         
         $valor1 = $_POST['valor1'];
         $valor2 = $_POST['valor2'];
