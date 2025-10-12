@@ -1,10 +1,7 @@
 <?php
    
-   function tratarValor($valor) {
-        if ($valor === '' || $valor === null) {
-            return 0;
-        }
-        return (int)$valor;
+    function tratarValor($valor1) {
+        return (int)$valor1;
     } 
 
     function calculaPar($valor1) {

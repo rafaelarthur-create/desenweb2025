@@ -10,17 +10,13 @@
     <?php
             
         require_once 'funcoes.php';
-
-        echo $_POST['valor1'] . "<br>";
-        echo $_POST['valor2'] . "<br>";
-        echo $_POST['valor3'] . "<br>";
         
         $valor1 = $_POST['valor1'];
         $valor2 = $_POST['valor2'];
         $valor3 = $_POST['valor3'];
-        $valor1 = tratarValor($_POST['valor1'] ?? null);
-        $valor2 = tratarValor($_POST['valor2'] ?? null);
-        $valor3 = tratarValor($_POST['valor3'] ?? null);
+        [$valor1,$valor2,$valor3] = tratarValor($_POST['valor1'] ?? null,
+                                                $_POST['valor2'] ?? null,
+                                                $_POST['valor3'] ?? null);
 
         $somaValores = $valor1 + $valor2 + $valor3;
         echo "<br>";
@@ -31,18 +27,18 @@
         
         if($resultadoAzul) {
             echo "<div id='resultadoAzul'>
-                    $somaValores
+                    <a><b>Resultado:</b> $somaValores</a>
                 </div>";    
         } elseif($resultadoVerde) {
             echo "<div id='resultadoVerde'>
-                    $somaValores
+                    <a><b>Resultado:</b> $somaValores</a>
                 </div>"; 
         } elseif($resultadoVermelho) {
             echo "<div id='resultadoVermelho'>
-                    $somaValores
+                    <a><b>Resultado:</b> $somaValores</a>
                 </div>"; 
         } else {
-        echo $somaValores;  
+        echo "<a><b>Resultado:</b> $somaValores</a>";  
         }
         
     ?>

@@ -1,10 +1,10 @@
 <?php
    
-   function tratarValor($valor) {
-        if ($valor === '' || $valor === null) {
-            return 0;
-        }
-        return (int)$valor;
+   function tratarValor($valor1,$valor2,$valor3) {
+        
+        return [(int)($valor1),
+                (int)($valor2),
+                (int)($valor3)];
     } 
 
    function calculaCorAzul($valor1) {
@@ -18,6 +18,7 @@
    function calculaCorVermelho($valor1, $valor2, $valor3) {
         return ($valor3 < $valor1 && $valor3 < $valor2);  
     } 
+    
 ?>
 
    
