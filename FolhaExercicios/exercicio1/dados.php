@@ -8,19 +8,25 @@
 </head>
 <body>
     <?php
-            
-        require_once 'funcoes.php';
         
+        //Consultando o arquivo de funções.
+        require_once 'funcoes.php';
+
+        //Recebendo os valores do formulário e aplicando as variáveis correspondentes.
         $valor1 = $_POST['valor1'];
         $valor2 = $_POST['valor2'];
         $valor3 = $_POST['valor3'];
+
+        //Caso algum dos valores venha nulo, todos serão tratados pela função 'tratarValor'.
         [$valor1,$valor2,$valor3] = tratarValor($_POST['valor1'] ?? null,
                                                 $_POST['valor2'] ?? null,
                                                 $_POST['valor3'] ?? null);
-
+        
+        //Aplicando a soma das variáveis.
         $somaValores = $valor1 + $valor2 + $valor3;
         echo "<br>";
 
+        //Atribuindo às variáveis os valores retornados pelas funções de cálculo.
         $resultadoAzul = calculaCorAzul($valor1);
         $resultadoVerde = calculaCorVerde($valor2, $valor3);
         $resultadoVermelho = calculaCorVermelho($valor1, $valor2, $valor3);
