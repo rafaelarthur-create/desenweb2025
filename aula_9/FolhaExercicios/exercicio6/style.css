@@ -1,0 +1,11 @@
+#resultadoVermelho {
+    background-color: red;
+}
+
+#resultadoVerde{
+    background-color: greenyellow;
+}
+
+#resultadoAzul {
+    background-color: rgb(43, 117, 255);
+}
