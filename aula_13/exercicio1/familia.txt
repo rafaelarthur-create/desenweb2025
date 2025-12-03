@@ -1,0 +1,4 @@
+Nome: João - Idade: 50
+Nome: Maria - Idade: 45
+Nome: Rafael - Idade: 20
+Nome: Ana - Idade: 17
